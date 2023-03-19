@@ -1,19 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-
-	function getCountWords() {
-		const article = document.getElementsByTagName('section');
-		var total_words = 0;
-		for (let index = 0; index < article.length; index++) {
-			total_words += article[index].innerHTML.trim().split(' ').length;
-		}
-		return total_words;
-	}
-    
+	import { getCountWordsWithoutH3 } from './countWords';
     let words = 0;
 
 	onMount(async () => {
-        words = getCountWords();
+        words = getCountWordsWithoutH3(document.getElementById('count'));
     });
 </script>
 
@@ -22,7 +13,7 @@
 		<h1>A few words about me</h1>
 		<small>(Exactly: {words} words)</small>
 	</header>
-	<section>
+	<section id='count'>
 		<h3>Intro</h3>
 		<p>
 			I am based in the Czech Republic and currently work remotely as a software developer for

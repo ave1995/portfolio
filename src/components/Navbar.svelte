@@ -8,7 +8,7 @@
 	<Logo />
 	<nav class="navbar">
 		<NavLink keyword="Home" href="/" />
-		<NavLink keyword="Welcome" href="/welcome" />
+		<NavLink keyword="Stats" href="/stats" />
 		<NavLink keyword="About" href="/about" />
 	</nav>
 	<div />

@@ -1,6 +1,20 @@
 <script>
 	import Navbar from '../components/Navbar.svelte';
 	import Sidebar from '../components/Sidebar.svelte';
+
+	import { beforeUpdate, onMount } from 'svelte';
+	import { activeStore } from '../stores';
+	let savestore = false;
+	$: if (savestore && $activeStore) {
+		window.sessionStorage.setItem('activeStore', JSON.stringify($activeStore));
+	}
+	beforeUpdate(async () => {
+		let ses = window.sessionStorage.getItem('activeStore');
+		if (ses) {
+			$activeStore = JSON.parse(ses);
+		}
+		savestore = true;
+	});
 </script>
 
 <main>
@@ -31,18 +45,18 @@
 		--var-direction: 'ltr';
 		--var-writing-mode: 'horizontal-tb';
 
-        --main-color: #202124;
-        --white-color:#f8f9fa;
-        --border-color: hsla(0, 0%, 63%, 0.3);
-        --second-color: #303136;
-        --hover-color: #c9d1d9;
+		--main-color: #202124;
+		--white-color: #f8f9fa;
+		--border-color: hsla(0, 0%, 63%, 0.3);
+		--second-color: #303136;
+		--hover-color: #c9d1d9;
 	}
 	:global(body) {
 		margin: 0;
 	}
-    :global(small) {
-        font-style: italic;
-    }
+	:global(small) {
+		font-style: italic;
+	}
 	main {
 		height: 100vh;
 	}
@@ -84,6 +98,6 @@
 		padding: 3rem;
 	}
 	:global(section) {
-        padding: 3rem;
+		padding: 3rem;
 	}
 </style>

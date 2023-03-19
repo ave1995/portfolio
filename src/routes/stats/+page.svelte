@@ -1,14 +1,12 @@
 <script>
-	let age = '';
-	const tick = () => {
-		const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
-		const birthTime = new Date('1995-08-27T01:00:00');
-		const timeDiff = Math.abs(Date.now() - birthTime.getTime());
-		age = (timeDiff / divisor).toFixed(11);
-	};
-	setInterval(() => {
-		tick();
-	}, 25);
+	import TableRow from '../../components/stats/TableRow.svelte';
+	import ageTick from './ageTick';
+	import { loadJson, readJsonData } from './getGithubData';
+	const age = ageTick();
+
+	const fetchGithubData = loadJson('https://api.github.com/repos/ave1995/portfolio').then((data) =>
+		readJsonData(data)
+	);
 </script>
 
 <article>
@@ -17,10 +15,13 @@
 	</header>
 	<section>
 		<table>
-			<tr>
-				<td>Current age</td>
-				<td>{age}</td>
-			</tr>
+			<TableRow label="Current age" link="" value={$age} />
+			{#await fetchGithubData then Githubdata}
+				{#each Githubdata as data}
+					{@debug data}
+					<TableRow label={data['label']} link={data['link']} value={data['value']} />
+				{/each}
+			{/await}
 		</table>
 	</section>
 </article>

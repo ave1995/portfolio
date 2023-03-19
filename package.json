@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-i18n": "^3.6.0"
+		"svelte-i18n": "^3.6.0",
+		"svelte-time": "^0.7.1"
 	}
 }

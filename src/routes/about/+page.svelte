@@ -11,7 +11,7 @@
 <article>
 	<header>
 		<h1>A few words about me</h1>
-		<small>(Exactly: {words} words)</small>
+		<small>Exactly {words} words</small>
 	</header>
 	<section id='count'>
 		<h3>Intro</h3>
@@ -61,6 +61,12 @@
 			<li>Self Improvement</li>
 			<li>Space</li>
 		</ul>
+		<h3>Goals</h3>
+		<ul>
+			<li>Get better at Svelte.js.</li>
+			<li>Learn React Native and make my app idea in it.</li>
+			<li>Get to the finish line of the IRONMAN race.</li>
+		</ul>
 		<h3>I dream of</h3>
 		<ul>
 			<li>Always finding motivation.</li>
@@ -99,12 +105,6 @@
 				Eventually I fall in love with software development and try to put all my free time into
 				improving myself as a developer or as an athlete.
 			</li>
-		</ul>
-		<h3>Goals</h3>
-		<ul>
-			<li>Get better at Svelte.js.</li>
-			<li>Learn React Native and make my app idea in it.</li>
-			<li>Get to the finish line of the IRONMAN race.</li>
 		</ul>
 	</section>
 </article>

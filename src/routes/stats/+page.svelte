@@ -12,11 +12,13 @@
 <article>
 	<header>
 		<h1>Stats</h1>
+		<small>A few "interesting" statistics</small>
 	</header>
 	<section>
 		<table>
 			<h3>Some stats about me</h3>
 			<TableRow label="Current age" link="" value={$age} />
+			<TableRow label="Current city" link="https://www.mestobustehrad.cz/" value="Buštěhrad, CZ" />
 		</table>
 		<table>
 			<h3>Some stats about this site</h3>

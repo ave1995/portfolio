@@ -1,7 +1,9 @@
 <script lang="ts">
-	import { activeStore } from '../stores';
+	import Hamburger from './Hamburger.svelte';
 	import Logo from './Logo.svelte';
 	import NavLink from './NavLink.svelte';
+
+	let opened: boolean = false;
 </script>
 
 <div class="header">
@@ -12,20 +14,34 @@
 		<NavLink keyword="About" href="/about" />
 	</nav>
 	<div />
+	<div class="burger">
+		<Hamburger bind:open={opened} />
+	</div>
 </div>
 
 <style>
 	.header {
 		grid-area: head;
-		display: inline-flex;
+		display: flex;
 		align-items: center;
-		background-color: var(--second-color);
 		justify-content: space-between;
+		background-color: var(--second-color);
 		border-bottom: 1px solid var(--border-color);
 	}
 	.navbar {
 		text-align: center;
 		display: inline-flex;
-        gap: 2rem;
+		gap: 2rem;
+	}
+	.burger {
+		display: none;
+	}
+	@media only screen and (max-width: 980px) {
+		.navbar {
+			display: none;
+		}
+		.burger {
+			display: flex;
+		}
 	}
 </style>

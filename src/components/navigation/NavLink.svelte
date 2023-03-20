@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import { activeStore } from '../stores';
+	import { activeStore } from '../../stores';
 	export let keyword: string;
 	export let href: string;
 

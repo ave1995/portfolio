@@ -1,5 +1,5 @@
 <script>
-	import Navbar from '../components/Navbar.svelte';
+	import Navbar from '../components/navigation/Navbar.svelte';
 	import Sidebar from '../components/Sidebar.svelte';
 
 	import { beforeUpdate, onMount } from 'svelte';
@@ -87,6 +87,13 @@
 		direction: var(--var-direction);
 		writing-mode: var(--var-writing-mode);
 		box-sizing: border-box;
+	}
+
+	@media only screen and (max-width: 980px) {
+		.content {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	:global(article) {

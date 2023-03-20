@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { activeStore } from '../stores';
+	import { activeStore } from '../../stores';
 
 	const setHome = () => {
 		$activeStore = 'Home';

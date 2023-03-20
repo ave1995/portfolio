@@ -46,4 +46,11 @@
 		margin: 3em 0 0;
 		padding: 3em 0 0;
 	}
+
+	@media only screen and (max-width: 980px) {
+		aside {
+			align-items: center;
+  			justify-content: center;	
+		}
+	}
 </style>

@@ -53,6 +53,7 @@
 	}
 	:global(body) {
 		margin: 0;
+		overflow-y: auto
 	}
 	:global(small) {
 		font-style: italic;
@@ -66,6 +67,8 @@
 		display: flex;
 		flex-direction: row-reverse;
 		padding: 4rem;
+		margin-left: 4rem;
+		margin-right: 4rem;
 	}
 	.post {
 		flex: 70%;
@@ -89,10 +92,31 @@
 		box-sizing: border-box;
 	}
 
+	@media only screen and (max-width: 1280px) {
+		.content {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
 	@media only screen and (max-width: 980px) {
 		.content {
 			display: flex;
 			flex-direction: column;
+		}
+		.sidebar {
+			margin-top: 3rem;
+		}
+	}
+
+	@media only screen and (max-width: 736px) {
+		.content {
+			padding: 0;
+		}
+		:global(header) {
+			padding: 1rem !important;
+		}
+		:global(section) {
+			padding: 1rem !important;
 		}
 	}
 

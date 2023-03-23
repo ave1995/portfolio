@@ -23,8 +23,7 @@
 		font-family: inherit;
 	}
 	.active span {
-		color: var(--white-color);
-		border-bottom: solid 3px var(--white-color);
+		color: var(--border-color);
 	}
 	a:hover {
 		color: var(--hover-color);

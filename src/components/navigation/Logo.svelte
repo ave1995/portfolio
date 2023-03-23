@@ -17,10 +17,12 @@
 		font-family: inherit;
 		color: var(--white-color);
 		padding-left: 2rem;
-		box-sizing: content-box;
 	}
 	a:hover {
 		cursor: pointer;
 		color: var(--hover-color);
+	}
+	h2 {
+		box-sizing: content-box;
 	}
 </style>

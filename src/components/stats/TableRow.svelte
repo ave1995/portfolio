@@ -26,8 +26,6 @@
 </tr>
 
 <style>
-	td {
-	}
 	@media only screen and (max-width: 736px) {
 		td {
 			padding-right: 0;

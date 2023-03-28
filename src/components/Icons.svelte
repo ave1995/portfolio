@@ -1,3 +1,7 @@
+<script>
+	import { base } from "$app/paths";
+</script>
+
 <div class="icons">
 	<a
 		href="https://github.com/ave1995"
@@ -6,7 +10,7 @@
 		rel="noopener noreferrer"
 	>
 		<div class="icon">
-			<img src="github.svg" alt="" />
+			<img src="{base}/github.svg" alt="" />
 		</div>
 	</a>
 	<a
@@ -16,7 +20,7 @@
 		rel="noopener noreferrer"
 	>
 		<div class="icon">
-			<img src="linkedin.svg" alt="" />
+			<img src="{base}/linkedin.svg" alt="" />
 		</div>
 	</a>
 	<a
@@ -26,7 +30,7 @@
 		rel="noopener noreferrer"
 	>
 		<div class="icon">
-			<img src="twitter.svg" alt="" />
+			<img src="{base}/twitter.svg" alt="" />
 		</div>
 	</a>
 </div>

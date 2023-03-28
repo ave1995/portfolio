@@ -1,12 +1,14 @@
 <script lang="ts">
 	import { activeStore } from '../../stores';
 
+	import { base } from "$app/paths";
+
 	const setHome = () => {
 		$activeStore = 'Home';
 	};
 </script>
 
-<a href="/" on:click={setHome}>
+<a href="{base}/" on:click={setHome}>
 	<h2>A\Ve</h2>
 </a>
 

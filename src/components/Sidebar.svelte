@@ -2,14 +2,16 @@
 	import Icons from './Icons.svelte';
 	import { activeStore } from '../stores';
 
+	import { base } from "$app/paths";
+
     const setHome = () => {
 		$activeStore = 'Home';
 	};
 </script>
 
 <aside>
-	<a href="/" on:click={setHome}>
-		<img src="me.jpg" alt="" />
+	<a href="{base}/" on:click={setHome}>
+		<img src="{base}/me.jpg" alt="" />
 	</a>
 	<h2>Aleš Veselý</h2>
 	<Icons />

@@ -1,8 +1,9 @@
 <script lang="ts">
-	import Cross from './Cross.svelte';
 	import Hamburger from './Hamburger.svelte';
 	import Logo from './Logo.svelte';
 	import NavLink from './NavLink.svelte';
+
+	import { base } from "$app/paths";
 
 	let opened: boolean = false;
 </script>
@@ -10,9 +11,9 @@
 <div class="header">
 	<Logo />
 	<nav class="navbar">
-		<NavLink keyword="Home" href="/" />
-		<NavLink keyword="Stats" href="/stats" />
-		<NavLink keyword="About" href="/about" />
+		<NavLink keyword="Home" href="{base}/" />
+		<NavLink keyword="Stats" href="{base}/stats" />
+		<NavLink keyword="About" href="{base}/about" />
 	</nav>
 	<div />
 	<div class="burger">
@@ -20,9 +21,9 @@
 	</div>
 	<aside class:opened>
 		<div class="burgerItems">
-			<NavLink keyword="Home" href="/" />
-			<NavLink keyword="Stats" href="/stats" />
-			<NavLink keyword="About" href="/about" />
+			<NavLink keyword="Home" href="{base}/" />
+			<NavLink keyword="Stats" href="{base}/stats" />
+			<NavLink keyword="About" href="{base}/about" />
 		</div>
 	</aside>
 </div>

@@ -10,7 +10,7 @@
 		rel="noopener noreferrer"
 	>
 		<div class="icon">
-			<img src="{base}/github.svg" alt="" />
+			<img src="./github.svg" alt="" />
 		</div>
 	</a>
 	<a
@@ -20,7 +20,7 @@
 		rel="noopener noreferrer"
 	>
 		<div class="icon">
-			<img src="{base}/linkedin.svg" alt="" />
+			<img src="./linkedin.svg" alt="" />
 		</div>
 	</a>
 	<a
@@ -30,7 +30,7 @@
 		rel="noopener noreferrer"
 	>
 		<div class="icon">
-			<img src="{base}/twitter.svg" alt="" />
+			<img src="./twitter.svg" alt="" />
 		</div>
 	</a>
 </div>

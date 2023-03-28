@@ -11,7 +11,7 @@
 
 <aside>
 	<a href="{base}/" on:click={setHome}>
-		<img src="{base}/me.jpg" alt="" />
+		<img src="./me.jpg" alt="" />
 	</a>
 	<h2>Aleš Veselý</h2>
 	<Icons />

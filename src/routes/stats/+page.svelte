@@ -59,10 +59,6 @@
 </article>
 
 <style>
-	:global(tr td:first-child) {
-		width: 70%;
-	}
-	
 	table {
 		width: 100%;
 	}

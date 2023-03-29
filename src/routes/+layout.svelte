@@ -88,7 +88,6 @@
 		grid-template-columns: 1fr 1fr;
 		direction: var(--var-direction);
 		writing-mode: var(--var-writing-mode);
-		box-sizing: border-box;
 	}
 
 	@media only screen and (max-width: 1280px) {

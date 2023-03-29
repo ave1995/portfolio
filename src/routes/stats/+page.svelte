@@ -66,15 +66,21 @@
 		width: 30%;
 	}
 	:global(td) {
-		border-bottom: 1px solid var(--border-color);
+		border: 1px solid var(--border-color);
+		border-left-width: 0;
+		border-right-width: 0;
+		border-top-width: 0;
 		padding: 0.75rem;
 	}
 	:global(tr:nth-child(even)) {
 		background-color: var(--main-color);
 	}
+	:global(tr:first-child td){
+		border-top-width: 1px;
+	}
 	table {
 		width: 100%;
 		border-spacing: 0;
-		border-collapse: collapse;
+		border-collapse: separate;
 	}
 </style>

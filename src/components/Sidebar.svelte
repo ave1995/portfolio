@@ -2,9 +2,9 @@
 	import Icons from './Icons.svelte';
 	import { activeStore } from '../stores';
 
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 
-    const setHome = () => {
+	const setHome = () => {
 		$activeStore = 'Home';
 	};
 </script>
@@ -49,10 +49,18 @@
 		padding: 3em 0 0;
 	}
 
+	a {
+		border: 0;
+	}
+	
+	a:hover {
+		border: 0;
+	}
+
 	@media only screen and (max-width: 980px) {
 		aside {
 			align-items: center;
-  			justify-content: center;	
+			justify-content: center;
 		}
 	}
 </style>

@@ -59,6 +59,12 @@
 </article>
 
 <style>
+	:global(tr td:first-child) {
+		width: 70%;
+	}
+	:global(tr td:nth-child(2)) {
+		max-width: 30%;
+	}
 	:global(td) {
 		border: 1px solid var(--border-color);
 		border-left-width: 0;
@@ -76,5 +82,6 @@
 		width: 100%;
 		border-spacing: 0;
 		border-collapse: separate;
+		box-sizing: border-box;
 	}
 </style>

@@ -58,9 +58,12 @@
 	:global(tr td:first-child) {
 		width: 70%;
 	}
+	:global(tr td:nth-child(2)) {
+		width: 30%;
+	}
 	:global(td) {
 		border-bottom: 1px solid var(--border-color);
-		padding: 0.75em;
+		padding: 0.75rem;
 	}
 	:global(tr:nth-child(even)) {
 		background-color: var(--main-color);

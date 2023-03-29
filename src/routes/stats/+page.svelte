@@ -27,8 +27,8 @@
 		<small>A few "interesting" stats</small>
 	</header>
 	<section>
+		<h3>Some stats about me</h3>
 		<table>
-			<h3>Some stats about me</h3>
 			<tbody>
 				<TableRow label="Current age" link="" value={$age} format={(x) => x} />
 				<TableRow
@@ -39,9 +39,9 @@
 				/>
 			</tbody>
 		</table>
+		<h3>Some stats about this site</h3>
 		<table>
 			<tbody>
-				<h3>Some stats about this site</h3>
 				{#each githubdata as data}
 					<TableRow
 						label={data['label']}

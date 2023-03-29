@@ -24,32 +24,36 @@
 <article>
 	<header>
 		<h1>Stats</h1>
-		<small>A few "interesting" statistics</small>
+		<small>A few "interesting" stats</small>
 	</header>
 	<section>
 		<table>
 			<h3>Some stats about me</h3>
-			<TableRow label="Current age" link="" value={$age} format={(x) => x} />
-			<TableRow
-				label="Current city"
-				link="https://www.mestobustehrad.cz/"
-				value="Buštěhrad, CZ"
-				format={(x) => x}
-			/>
+			<tbody>
+				<TableRow label="Current age" link="" value={$age} format={(x) => x} />
+				<TableRow
+					label="Current city"
+					link="https://www.mestobustehrad.cz/"
+					value="Buštěhrad, CZ"
+					format={(x) => x}
+				/>
+			</tbody>
 		</table>
 		<table>
-			<h3>Some stats about this site</h3>
-			{#each githubdata as data}
-				<TableRow
-					label={data['label']}
-					link={data['link']}
-					value={data['value']}
-					format={data.format ? data.format : (x) => x}
-				/>
-			{:else}
-				<!-- this block renders when photos.length === 0 -->
-				<p>loading...</p>
-			{/each}
+			<tbody>
+				<h3>Some stats about this site</h3>
+				{#each githubdata as data}
+					<TableRow
+						label={data['label']}
+						link={data['link']}
+						value={data['value']}
+						format={data.format ? data.format : (x) => x}
+					/>
+				{:else}
+					<!-- this block renders when photos.length === 0 -->
+					<p>loading...</p>
+				{/each}
+			</tbody>
 		</table>
 	</section>
 </article>

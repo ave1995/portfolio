@@ -58,30 +58,4 @@
 	</section>
 </article>
 
-<style>
-	:global(tr td:first-child) {
-		width: 70%;
-	}
-	:global(tr td:nth-child(2)) {
-		width: fit-content;
-	}
-	:global(td) {
-		border: 1px solid var(--border-color);
-		border-left-width: 0;
-		border-right-width: 0;
-		border-top-width: 0;
-		padding: 0.75em;
-	}
-	:global(tr:nth-child(2n + 1)) {
-		background-color: var(--main-color);
-	}
-	:global(tr:first-child td){
-		border-top-width: 1px;
-	}
-	table {
-		width: 100%;
-		border-spacing: 0;
-		border-collapse: separate;
-		box-sizing: border-box;
-	}
-</style>
+

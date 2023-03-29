@@ -9,7 +9,9 @@
 </script>
 
 <div class="header">
-	<Logo />
+	<div class="logo">
+		<Logo />
+	</div>
 	<nav class="navbar">
 		<NavLink keyword="Home" href="{base}/" />
 		<NavLink keyword="Stats" href="{base}/stats" />
@@ -40,10 +42,14 @@
 	.navbar {
 		text-align: center;
 		display: inline-flex;
-		gap: 2rem;
+		gap: 2em;
+	}
+	.logo {
+		padding-left: 0.5em;
 	}
 	.burger {
 		display: none;
+		padding-right: 0.5em;
 	}
 
 	@media only screen and (max-width: 980px) {

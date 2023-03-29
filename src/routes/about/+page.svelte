@@ -112,6 +112,7 @@
 <style>
 	.list {
 		display: flex;
+		flex-flow: row wrap;
 		gap: 1rem;
 	}
 </style>

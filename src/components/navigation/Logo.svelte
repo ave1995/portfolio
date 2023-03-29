@@ -18,7 +18,6 @@
 		font-size: inherit;
 		font-family: inherit;
 		color: var(--white-color);
-		padding-left: 2rem;
 	}
 	a:hover {
 		cursor: pointer;

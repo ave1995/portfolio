@@ -57,7 +57,6 @@
 <style>
 	:global(tr td:first-child) {
 		width: 70%;
-		border-right: 1px solid var(--border-color);
 	}
 	:global(td) {
 		border-bottom: 1px solid var(--border-color);

@@ -25,10 +25,3 @@
 	</td>
 </tr>
 
-<style>
-	@media only screen and (max-width: 736px) {
-		td {
-			padding-right: 0;
-		}
-	}
-</style>

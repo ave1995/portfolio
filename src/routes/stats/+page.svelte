@@ -63,7 +63,7 @@
 		width: 70%;
 	}
 	:global(tr td:nth-child(2)) {
-		max-width: 30%;
+		width: fit-content;
 	}
 	:global(td) {
 		border: 1px solid var(--border-color);

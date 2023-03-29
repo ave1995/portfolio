@@ -59,7 +59,6 @@
 </article>
 
 <style>
-	
 	:global(td) {
 		border: 1px solid var(--border-color);
 		border-left-width: 0;

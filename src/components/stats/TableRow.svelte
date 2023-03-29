@@ -15,7 +15,7 @@
 </script>
 
 <tr>
-	<td>{label}</td>
+	<td width="70%">{label}</td>
 	<td>
 		{#if link}
 			<a href={link}>{format(String(value))}</a>

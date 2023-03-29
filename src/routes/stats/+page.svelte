@@ -60,10 +60,7 @@
 
 <style>
 	:global(tr td:first-child) {
-		width: 70%;
-	}
-	:global(tr td:nth-child(2)) {
-		width: 30%;
+		width: 60%;
 	}
 	:global(td) {
 		border: 1px solid var(--border-color);
@@ -77,5 +74,9 @@
 	}
 	:global(tr:first-child td){
 		border-top-width: 1px;
+	}
+
+	table {
+		width: 100%;
 	}
 </style>

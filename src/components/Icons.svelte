@@ -47,4 +47,10 @@
 	img:hover {
 		filter: invert(0.3);
 	}
+	a {
+		border: 0;
+	}
+	a:hover {
+		border: 0;
+	}
 </style>

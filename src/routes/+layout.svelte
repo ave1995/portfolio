@@ -130,4 +130,13 @@
 	:global(section) {
 		padding: 3em;
 	}
+	:global(a) {
+		text-decoration: none;
+		color: inherit;
+		border-bottom: 1px dotted var(--white-color);
+	}
+	:global(a:hover) {
+		color: var(--hover-color);
+		border-bottom: 1px dotted var(--hover-color);
+	}
 </style>

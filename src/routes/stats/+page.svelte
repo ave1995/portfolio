@@ -59,9 +59,6 @@
 </article>
 
 <style>
-	:global(tr td:first-child) {
-		width: 70%;
-	}
 	:global(tr td:nth-child(2)) {
 		width: 30%;
 	}
@@ -70,9 +67,9 @@
 		border-left-width: 0;
 		border-right-width: 0;
 		border-top-width: 0;
-		padding: 0.75rem;
+		padding: 0.75em;
 	}
-	:global(tr:nth-child(even)) {
+	:global(tr:nth-child(2n + 1)) {
 		background-color: var(--main-color);
 	}
 	:global(tr:first-child td){

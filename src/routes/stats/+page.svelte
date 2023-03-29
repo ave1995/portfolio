@@ -59,9 +59,7 @@
 </article>
 
 <style>
-	:global(tr td:nth-child(2)) {
-		width: 30%;
-	}
+	
 	:global(td) {
 		border: 1px solid var(--border-color);
 		border-left-width: 0;

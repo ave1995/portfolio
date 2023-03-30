@@ -21,16 +21,13 @@
 	});
 </script>
 
-<!-- <article>
+<article>
 	<header>
 		<h1>Stats</h1>
 		<small>A few "interesting" stats</small>
 	</header>
 	<section>
-		
-	</section>
-</article> -->
-<h3>Some stats about me</h3>
+		<h3>Some stats about me</h3>
 		<table>
 			<tbody>
 				<TableRow label="Current age" link="" value={$age} format={(x) => x} />
@@ -58,10 +55,17 @@
 				{/each}
 			</tbody>
 		</table>
+	</section>
+</article>
 
 <style>
+	@media only screen and (max-width: 736px) {
+		:global(tr td:first-child) {
+			width: 50% !important;
+		}
+	}
 	:global(tr td:first-child) {
-		width: 60%;
+		width: 70%;
 	}
 	:global(td) {
 		border: 1px solid var(--border-color);
@@ -76,8 +80,8 @@
 	:global(tr:first-child td){
 		border-top-width: 1px;
 	}
-
 	table {
 		width: 100%;
+		border-spacing: 0;
 	}
 </style>

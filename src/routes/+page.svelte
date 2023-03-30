@@ -6,7 +6,7 @@
 		</div>
 	</header>
 	<section>
-		<p>Welcome to my website. I created this page to practice Svelte.js and to share a bit about myself and my software skills.</p>
+		<p>Welcome to my website. I created this website to practice Svelte.js and to share a bit about myself and my software skills.</p>
 		<br>
 		<p>
 			Source available

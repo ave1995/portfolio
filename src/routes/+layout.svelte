@@ -112,6 +112,7 @@
 	@media only screen and (max-width: 736px) {
 		.content {
 			padding: 0;
+			padding-top: 3rem;
 		}
 		:global(header) {
 			padding: 1em !important;

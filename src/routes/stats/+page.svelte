@@ -21,13 +21,16 @@
 	});
 </script>
 
-<article>
+<!-- <article>
 	<header>
 		<h1>Stats</h1>
 		<small>A few "interesting" stats</small>
 	</header>
 	<section>
-		<h3>Some stats about me</h3>
+		
+	</section>
+</article> -->
+<h3>Some stats about me</h3>
 		<table>
 			<tbody>
 				<TableRow label="Current age" link="" value={$age} format={(x) => x} />
@@ -55,8 +58,6 @@
 				{/each}
 			</tbody>
 		</table>
-	</section>
-</article>
 
 <style>
 	:global(tr td:first-child) {

@@ -72,6 +72,7 @@
 	}
 	.post {
 		flex: 70%;
+		width: 100%;
 	}
 	.sidebar {
 		flex: 30%;
@@ -100,8 +101,10 @@
 		.content {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 		}
 		.sidebar {
+			margin: 0;
 			margin-top: 3rem;
 		}
 	}
@@ -116,11 +119,19 @@
 		:global(section) {
 			padding: 1em !important;
 		}
+		:global(h1, h3){
+			text-align: center;
+		}
+		:global(.small){
+			text-align: center;
+		}
 	}
 
 	:global(article) {
+		
 		border: 1px solid var(--border-color);
 		background-color: var(--second-color);
+		width: 100%;
 	}
 	:global(header) {
 		border-bottom: 1px solid var(--border-color);

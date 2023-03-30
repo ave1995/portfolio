@@ -1,19 +1,21 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { getCountWordsWithoutH3 } from './countWords';
-    let words = 0;
+	let words = 0;
 
 	onMount(async () => {
-        words = getCountWordsWithoutH3(document.getElementById('count'));
-    });
+		words = getCountWordsWithoutH3(document.getElementById('count'));
+	});
 </script>
 
 <article>
 	<header>
 		<h1>A few words about me</h1>
-		<small>Exactly {words} words</small>
+		<div class="small">
+			<small>Exactly {words} words</small>
+		</div>
 	</header>
-	<section id='count'>
+	<section id="count">
 		<h3>Intro</h3>
 		<p>
 			I am based in the Czech Republic and currently work remotely as a software developer for

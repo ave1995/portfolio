@@ -24,7 +24,9 @@
 <article>
 	<header>
 		<h1>Stats</h1>
-		<small>A few "interesting" stats</small>
+		<div class="small">
+			<small>A few "interesting" stats</small>
+		</div>
 	</header>
 	<section>
 		<h3>Some stats about me</h3>
@@ -77,7 +79,7 @@
 	:global(tr:nth-child(2n + 1)) {
 		background-color: var(--main-color);
 	}
-	:global(tr:first-child td){
+	:global(tr:first-child td) {
 		border-top-width: 1px;
 	}
 	table {

@@ -104,8 +104,7 @@
 				Architect. Eventually I got into web application development.
 			</li>
 			<li>
-				Eventually I fall in love with software development and try to put all my free time into
-				improving myself as a developer or as an athlete.
+				Eventually I fell in love with software development and now I try to dedicate my time to it.
 			</li>
 		</ul>
 	</section>
